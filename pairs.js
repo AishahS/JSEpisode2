@@ -19,6 +19,18 @@
 ****************************************************************/
 function pairs(names) {
   // Your code goes here
+  
+  const names = [];
+  const newarr = names;
+  while (names.length > 1) {
+    newarr.push([names.getRandom(), names.getRandom()]);
+  }
+
+  if (names.length) {
+    newarr.push([names.pop()]);
+  }
+  return newarr;
+}
 }
 
 module.exports = pairs;
